@@ -1,23 +1,23 @@
 class Product    
+SHOPNAME = "Ridham's Shop"
+PRODUCTCOMPANY = "Logitech"
   def initialize(name,price)
   @pname=name
-  @pprice=price
+  @pprice=price.to_i;
   end
    def calc()
-     puts "Welcome #{@@pn}. Your invoice with 5% gst are below"
+     puts "Welcome to #{SHOPNAME} #{@@costumar_name}. Your invoice of #{@pname} of #{PRODUCTCOMPANY} with #{@@p}% gst are below"
      puts "product details"
-     final=@pprice.to_i;
-     final1=@@p.to_i;
-     total=final * final1 / 100;
-     answer=@pprice + total;
+     total=@pprice * @@p / 100;
+     answer=@pprice + total
      puts "#{@pname} - #{answer}" 
    end
-
+        
    begin
       puts "enter your name"
-      @@pn=gets
+      @@costumar_name=gets.chomp
       puts "enter gst"
-      @@p=gets
+      @@p=gets.to_i;
       product1=Product.new('keyboard',100);
       product1.calc
    end
