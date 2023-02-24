@@ -1,12 +1,12 @@
 class Product    
 SHOPNAME = "Ridham's Shop"
-PRODUCTCOMPANY = "Logitech"
+$product_company = "Logitech"
   def initialize(name,price)
   @pname=name
   @pprice=price.to_i;
   end
    def calc()
-     puts "Welcome to #{SHOPNAME} #{@@costumar_name}. Your invoice of #{@pname} of #{PRODUCTCOMPANY} with #{@@p}% gst are below"
+     puts "Welcome to #{SHOPNAME} #{@@costumar_name}. Your invoice of #{@pname} of #{$product_company} with #{@@p}% gst are below"
      puts "product details"
      total=@pprice * @@p / 100;
      answer=@pprice + total
