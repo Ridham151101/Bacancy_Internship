@@ -5,7 +5,7 @@ MINOVEN = 40
     p "#{remin}"
   end
   
-  def preparation_time_in_minutes(min)
+  def preparation_time_per_layer(min)
     totmin = min * 2
     p "#{totmin}"
   end
@@ -18,5 +18,5 @@ end
 
 lasagna = Lasagna.new
 lasagna.remaining_minutes_in_oven(30)
-lasagna.preparation_time_in_minutes(2)
+lasagna.preparation_time_per_layer(2)
 lasagna.total_time_in_minutes(3, 20)
